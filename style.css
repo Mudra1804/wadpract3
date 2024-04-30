@@ -1,0 +1,61 @@
+/* Custom styles for sidebar and main content */
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    height: 100vh; /* Full height sidebar */
+    position: fixed; /* Fixed position to stay on the side */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto; /* Allow scrolling if content exceeds sidebar height */
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 20px;
+    margin-left: 25%; /* Adjust to match sidebar width */
+}
+
+.card {
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Light gray background for cards */
+    border: 1px solid #ddd; /* Gray border for cards */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+@media (max-width: 992px) {
+    /* Responsive layout adjustments */
+    .content {
+        margin-left: 0; /* Reset margin for small screens */
+    }
+    .sidebar {
+        width: 100%; /* Full width for small screens */
+        height: auto; /* Auto height to fit content */
+        position: relative; /* Reset position for small screens */
+    }
+}
+
+
